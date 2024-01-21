@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+}
+
+/* Typography */
+.links {
+  color: #fff;
+  padding-top: 40px;
+}
+
+.nav-icon {
+  fill: #fff;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Buttons */
+.hamburger-icon {
+  font-size: 120px;
+  color: #000; 
+}
+
+/* Content */
+header {
+  margin: 0 auto;
+  width: 60%;
+}
+
+main header {
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.card {
+  position: relative;
+  border: solid 2px #000;
+  margin: 0 auto 50px;
+  width: 60%;
+  overflow: hidden;
+}
+
+.container {
+  padding: 20px;
+  z-index: 1;
+}
+
+.user-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.logo {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.nav-container {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.bottom-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.nav-footer {
+  text-align: center;
+  width: 80%;
+}
+
+.card-illustration {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%; 
+  height: 50%;
+  z-index: -1;
+}
+
+.container header {
+  position: absolute
+  z-index: 2;
+  text-align: right;
+}
+
+.illustration {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  transition: width 0.3s ease-in-out;
+}
+
+.card header {
+  text-align: right;
+  padding: 25px 0 0 0;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #172662; /* Blue*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 80px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover,
+a:focus {
+  color: #ee654e;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  margin: 0 auto;
+}
+
+.illustration.smaller {
+  width: 75%; /* adjust as needed */
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}

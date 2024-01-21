@@ -1,10 +1,96 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Take Home Assignment</title>
-</head>
-<body>
-<h1>Hello world!</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>My Courses</title>
+  </head>
+  <body>
+    <!-- Side Navbar -->
+    <nav id="mySidenav" class="sidenav">
+      <div class="nav-container">
+        <div class="top-nav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <img
+            class="logo"
+            src="./assets/DPI Logo.png"
+            alt="logo for DPI"
+            width="100%" />
+          <div class="links">
+            <div>
+              <object
+                type="image/svg+xml"
+                data="./assets/Nav-course icon-hollow.svg"
+                class="nav-icon"></object>
+              <a href="#">Courses</a>
+            </div>
+            <div>
+              <img
+                src="./assets/Nav-logout icon-hollow.png"
+                alt="logo of logout" /><a href="#">Log out</a>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-nav">
+          <div class="user-card">
+            <img
+              src="./assets/Profile Thumbnail.png"
+              alt="user avatar thumbnail" />
+            <p>Miles Morales</p>
+          </div>
+          <p class="nav-footer">&copy; 2023 Discovery Partners Institute</p>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar open button -->
+    <span class="hamburger-icon" onclick="openNav()">&#9776;</span>
+    <!-- Main Content -->
+    <main id="main">
+      <header>
+        <h1>My Courses</h1>
+      </header>
+      <section>
+        <div class="card">
+          <div class="card-illustration">
+            <img src="./assets/card bg-1.png" alt="card illustration" />
+          </div>
+          <header>View Syllabus</header>
+          <div class="container">
+            <img
+              src="./assets/card thumbnail.png"
+              alt="floral course thumbnail"
+              width="72px" />
+            <h2>Introduction to Software Development Foundations (2023-7.1)</h2>
+            <p>In progress</p>
+            <img
+              src="./assets/arrow-default.png"
+              alt="green arrow to select this course" />
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-illustration">
+            <img src="./assets/card bg-2.png" alt="card illustration" />
+          </div>
+          <div class="container">
+            <header>View Syllabus</header>
+            <img
+              src="./assets/card thumbnail 2.png"
+              alt="floral course thumbnail" />
+            <h2>Introduction to Software Development Foundations (2023-7.1)</h2>
+            <p>Start now</p>
+            <img
+              src="./assets/arrow-default.png"
+              alt="green arrow to select this course" />
+          </div>
+        </div>
+      </section>
+      <img
+        src="./assets/illustration.png"
+        alt="decorative illustration of different shapes"
+        class="illustration" />
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
