@@ -2,6 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet" />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>My Courses</title>
   </head>
@@ -18,18 +23,58 @@
             src="./assets/DPI Logo.png"
             alt="logo for DPI"
             width="100%" />
-          <div class="links">
-            <div>
-              <object
-                type="image/svg+xml"
-                data="./assets/Nav-course icon-hollow.svg"
-                class="nav-icon"></object>
+          <div class="link-list">
+            <div class="links">
+              <svg
+                fill="#fff"
+                height="48"
+                viewBox="0 0 24 24"
+                width="48"
+                xmlns="http://www.w3.org/2000/svg">
+                <g
+                  stroke="#122666"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2">
+                  <path
+                    d="m3.58333 4.375h4.75c.83985 0 1.64531.33363 2.23917.9275.5939.59386.9275 1.39931.9275 2.23917v11.08333c0-.6299-.2502-1.234-.6956-1.6794s-1.04951-.6956-1.6794-.6956h-5.54167z" />
+                  <path
+                    d="m19.4167 4.375h-4.75c-.8399 0-1.6453.33363-2.2392.9275-.5939.59386-.9275 1.39931-.9275 2.23917v11.08333c0-.6299.2502-1.234.6956-1.6794s1.0495-.6956 1.6794-.6956h5.5417z" />
+                </g>
+              </svg>
               <a href="#">Courses</a>
             </div>
-            <div>
-              <img
-                src="./assets/Nav-logout icon-hollow.png"
-                alt="logo of logout" /><a href="#">Log out</a>
+            <div class="links">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 24 24"
+                fill="#fff"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10.5 19.5H6.5C5.96957 19.5 5.46086 19.3244 5.08579 19.0118C4.71071 18.6993 4.5 18.2754 4.5 17.8333V6.16667C4.5 5.72464 4.71071 5.30072 5.08579 4.98816C5.46086 4.67559 5.96957 4.5 6.5 4.5H10.5"
+                  fill="#fff"
+                  stroke="#fff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path
+                  d="M15.3333 16.1666L19.5 11.9999L15.3333 7.83325"
+                  stroke="#fff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path
+                  d="M19.5 12H9.5"
+                  stroke="#FF5A43"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path
+                  d="M9 11C8.44772 11 8 11.4477 8 12C8 12.5523 8.44772 13 9 13V11ZM11.5 11H9V13H11.5V11Z"
+                  fill="#fff" />
+              </svg>
+              <a href="#">Log out</a>
             </div>
           </div>
         </div>
@@ -64,6 +109,12 @@
               width="72px" />
             <h2>Introduction to Software Development Foundations (2023-7.1)</h2>
             <p>In progress</p>
+            <div class="progress-container">
+              <div class="main-progress-bar">
+                <div class="progress-bar"></div>
+              </div>
+              <div>75%</div>
+            </div>
             <img
               src="./assets/arrow-default.png"
               alt="green arrow to select this course" />

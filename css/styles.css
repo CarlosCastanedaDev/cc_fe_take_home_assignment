@@ -1,13 +1,19 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Helvetica, sans-serif;
+  font-family: "Roboto", Helvetica, sans-serif;
 }
 
 /* Typography */
-.links {
+.link-list {
   color: #fff;
   padding-top: 40px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-icon {
@@ -23,6 +29,31 @@ h1 {
   font-size: 120px;
   color: #000; 
 }
+
+/* Progress Bar */
+.progress-container {
+  display: flex;
+  align-items: space-between;
+}
+
+.main-progress-bar { 
+  background-color: #172662; 
+  width: 80%; 
+  border-radius: 15px; 
+  border: solid 1px #000;
+  height: 15px;
+  margin-right: 20px;
+} 
+  
+.progress-bar { 
+  background-color: #F8694C; 
+  color: orange; 
+  text-align: right; 
+  font-size: 20px; 
+  border-radius: 15px; 
+  height: 15px;
+  width: 75%;
+} 
 
 /* Content */
 header {
@@ -60,6 +91,7 @@ main header {
 .logo {
   margin: 0 auto;
   width: 60%;
+  object-fit: contain;
 }
 
 .nav-container {
