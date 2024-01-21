@@ -85,6 +85,17 @@ section {
   margin: 0 auto 50px;
   width: 80%;
   overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 60%;
+}
+
+.card-1 {
+  background-image: url('../assets/card bg-1.png');
+}
+
+.card-2 {
+  background-image: url('../assets/card bg-2.png');
 }
 
 .container {
@@ -137,11 +148,6 @@ section {
   padding: 20px;
 }
 
-.nav-footer {
-  text-align: center;
-  width: 80%;
-}
-
 .card-illustration {
   position: absolute;
   top: 0;
@@ -191,9 +197,9 @@ section {
 
 /* The navigation menu links */
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 8px 8px 8px 16px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 16px;
   color: #fff;
   display: block;
   transition: 0.3s;
@@ -214,6 +220,24 @@ a:focus {
   margin-left: 50px;
 }
 
+.bottom-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.nav-footer {
+  text-align: center;
+  width: 90%;
+  font-size: 12px;
+}
+
+.user-name {
+  text-align: center;
+}
+
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   transition: margin-left 0.5s;
@@ -225,16 +249,6 @@ a:focus {
   position: relative;
   margin: 0 auto;
 }
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-/* @media screen and (max-width: 500px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-  .sidenav a {
-    font-size: 18px;
-  }
-} */
 
 @media only screen and (min-width: 601px) {
   section {
@@ -257,5 +271,14 @@ a:focus {
     bottom: 0;
     right: 0;
     transition: width 0.3s ease-in-out;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 24px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
   }
 }

@@ -4,8 +4,8 @@ function openNav() {
     document.getElementById('mySidenav').style.width = '250px';
     document.getElementById('main').style.marginLeft = '250px';
   } else {
-    document.getElementById('mySidenav').style.width = '250px';
-    document.getElementById('main').style.marginLeft = '0';
+    document.getElementById('mySidenav').style.width = '150px';
+    document.getElementById('main').style.marginLeft = '125px';
   }
 }
 
