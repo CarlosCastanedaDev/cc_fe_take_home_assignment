@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", Helvetica, sans-serif;
+  font-family: 'Roboto', Helvetica, sans-serif;
 }
 
 /* Typography */
@@ -26,8 +26,8 @@ h1 {
 
 /* Buttons */
 .hamburger-icon {
-  font-size: 120px;
-  color: #000; 
+  font-size: 60px;
+  color: #000;
 }
 
 /* Progress Bar */
@@ -37,24 +37,24 @@ h1 {
   margin-bottom: 20px;
 }
 
-.main-progress-bar { 
-  background-color: #172662; 
-  width: 80%; 
-  border-radius: 15px; 
+.main-progress-bar {
+  background-color: #172662;
+  width: 80%;
+  border-radius: 15px;
   border: solid 1px #000;
   height: 15px;
   margin-right: 20px;
-} 
-  
-.progress-bar { 
-  background-color: #F8694C; 
-  color: orange; 
-  text-align: right; 
-  font-size: 20px; 
-  border-radius: 15px; 
+}
+
+.progress-bar {
+  background-color: #f8694c;
+  color: orange;
+  text-align: right;
+  font-size: 20px;
+  border-radius: 15px;
   height: 15px;
   width: 75%;
-} 
+}
 
 /* Content */
 header {
@@ -70,12 +70,20 @@ main header {
 img {
   display: inline-block;
 }
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .card {
   position: relative;
   min-height: 500px;
   border: solid 2px #000;
   margin: 0 auto 50px;
-  width: 60%;
+  width: 80%;
   overflow: hidden;
 }
 
@@ -110,6 +118,7 @@ img {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  font-size: 1rem;
 }
 
 .top-nav {
@@ -137,13 +146,13 @@ img {
   position: absolute;
   top: 0;
   right: 0;
-  width: 50%; 
+  width: 50%;
   height: 50%;
   z-index: -1;
 }
 
 .container header {
-  position: absolute
+  position: absolute;
   z-index: 2;
   text-align: right;
 }
@@ -151,8 +160,9 @@ img {
 .illustration {
   position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 50%;
   transition: width 0.3s ease-in-out;
+  z-index: -1;
 }
 
 .card header {
@@ -216,23 +226,29 @@ a:focus {
   margin: 0 auto;
 }
 
-.illustration.smaller {
-  width: 75%; /* adjust as needed */
-}
-
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
+/* @media screen and (max-width: 500px) {
   .sidenav {
     padding-top: 15px;
   }
   .sidenav a {
     font-size: 18px;
   }
-}
+} */
 
-@media screen and (min-width: 501px) {
+@media only screen and (min-width: 601px) {
   section {
-    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .card {
+    position: relative;
+    min-height: 500px;
+    border: solid 2px #000;
+    margin: 0 auto 50px;
+    width: 40%;
+    overflow: hidden;
   }
 
   .illustration {
