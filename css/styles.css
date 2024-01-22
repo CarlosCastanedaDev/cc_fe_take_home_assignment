@@ -14,6 +14,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 15px;
 }
 
 .nav-icon {
@@ -63,8 +64,7 @@ header {
 }
 
 main header {
-  margin: 0 auto;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 img {
@@ -83,7 +83,7 @@ section {
   min-height: 500px;
   border: solid 2px #000;
   margin: 0 auto 50px;
-  width: 80%;
+  max-width: 80%;
   overflow: hidden;
   background-repeat: no-repeat;
   background-position: top right;
@@ -119,7 +119,7 @@ section {
 
 .logo {
   margin: 0 auto;
-  width: 60%;
+  width: 70%;
   object-fit: contain;
 }
 
@@ -176,18 +176,33 @@ section {
   padding: 25px 0 0 0;
 }
 
+.arrow {
+  width: 62px;
+  height: 48px;
+  background-image: url('../assets/arrow-default.png');
+  background-size: cover;
+}
+
+.arrow:hover {
+  background-image: url('../assets/arrow-hover.png');
+}
+
+.arrow:active {
+  background-image: url('../assets/arrow-pressed.png');
+}
+
 /* The side navigation menu */
 .sidenav {
-  height: 100%; /* 100% Full-height */
+  height: 100%;
   width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
+  position: fixed;
+  z-index: 1;
+  top: 0;
   left: 0;
-  background-color: #172662; /* Blue*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 80px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  background-color: #172662; /* DPI blue*/
+  overflow-x: hidden;
+  padding-top: 80px;
+  transition: 0.5s;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -216,7 +231,7 @@ a:focus {
   position: absolute;
   top: 0;
   right: 25px;
-  font-size: 36px;
+  font-size: 48px;
   margin-left: 50px;
 }
 
@@ -238,10 +253,8 @@ a:focus {
   text-align: center;
 }
 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   transition: margin-left 0.5s;
-  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -253,7 +266,7 @@ a:focus {
 @media only screen and (min-width: 601px) {
   section {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .card {
@@ -261,7 +274,7 @@ a:focus {
     min-height: 500px;
     border: solid 2px #000;
     margin: 0 auto 50px;
-    width: 40%;
+    width: 30%;
     overflow: hidden;
   }
 
